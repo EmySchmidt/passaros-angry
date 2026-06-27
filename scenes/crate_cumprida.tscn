@@ -1,0 +1,48 @@
+[gd_scene load_steps=7 format=3 uid="uid://jln6ea0j5yqx"]
+
+[ext_resource type="Script" uid="uid://co3gfosswau5h" path="res://scripts/crate_cumprida.gd" id="1_kp1xy"]
+[ext_resource type="Texture2D" uid="uid://c70cg2xgw16bi" path="res://arte angry/assets.png" id="1_qh6f1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kp1xy"]
+size = Vector2(91, 11)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kp1xy"]
+atlas = ExtResource("1_qh6f1")
+region = Rect2(195, 381, 115, 12)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ts8rj"]
+atlas = ExtResource("1_qh6f1")
+region = Rect2(195, 369, 115, 12)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_72iqi"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kp1xy")
+}],
+"loop": false,
+"name": &"cratedano",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ts8rj")
+}],
+"loop": false,
+"name": &"cratefull",
+"speed": 5.0
+}]
+
+[node name="crate_cumprida" type="RigidBody2D"]
+contact_monitor = true
+max_contacts_reported = 3
+script = ExtResource("1_kp1xy")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.5, 0.5)
+shape = SubResource("RectangleShape2D_kp1xy")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_72iqi")
+animation = &"cratefull"
+autoplay = "cratefull"

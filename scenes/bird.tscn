@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://cpdpor03563sm"]
+
+[ext_resource type="Script" uid="uid://mwsvgvq4mi5v" path="res://scripts/bird.gd" id="1_3po83"]
+[ext_resource type="Texture2D" uid="uid://biif483y5lvfy" path="res://arte angry/Felipe Luiz.png" id="2_hq4t0"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_80nbo"]
+radius = 23.345236
+
+[node name="bird" type="RigidBody2D"]
+z_index = 1
+input_pickable = true
+freeze = true
+script = ExtResource("1_3po83")
+
+[node name="FelipeLuiz" type="Sprite2D" parent="."]
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("2_hq4t0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_80nbo")
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]

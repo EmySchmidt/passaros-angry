@@ -1,0 +1,51 @@
+[gd_scene load_steps=7 format=3 uid="uid://cslj0ye8shdw4"]
+
+[ext_resource type="Script" uid="uid://cuc2434tqoq3x" path="res://scripts/crate.gd" id="1_dwt0d"]
+[ext_resource type="Texture2D" uid="uid://c70cg2xgw16bi" path="res://arte angry/assets.png" id="2_kn6iu"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_p57ef"]
+size = Vector2(42, 43)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dwt0d"]
+atlas = ExtResource("2_kn6iu")
+region = Rect2(396, 537, 22, 21)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_74u5o"]
+atlas = ExtResource("2_kn6iu")
+region = Rect2(396, 462, 22, 22)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_1kl6c"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dwt0d")
+}],
+"loop": true,
+"name": &"cratedano",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_74u5o")
+}],
+"loop": true,
+"name": &"cratefull",
+"speed": 5.0
+}]
+
+[node name="crate" type="RigidBody2D"]
+mass = 0.5
+contact_monitor = true
+max_contacts_reported = 3
+script = ExtResource("1_dwt0d")
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -0.5)
+shape = SubResource("RectangleShape2D_p57ef")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_1kl6c")
+animation = &"cratefull"
+speed_scale = 0.5
