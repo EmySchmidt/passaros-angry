@@ -1,0 +1,44 @@
+[gd_scene load_steps=6 format=3 uid="uid://b12c7skuq50gf"]
+
+[ext_resource type="PackedScene" uid="uid://daxc13vyxryt8" path="res://scenes/crate_furo.tscn" id="1_w2d6y"]
+[ext_resource type="PackedScene" uid="uid://dcilc6523kmhn" path="res://scenes/pig.tscn" id="2_5od30"]
+[ext_resource type="PackedScene" uid="uid://uha585336mgj" path="res://scenes/crate_retangula.tscn" id="3_unrjo"]
+[ext_resource type="PackedScene" uid="uid://jln6ea0j5yqx" path="res://scenes/crate_cumprida.tscn" id="4_avfhh"]
+[ext_resource type="PackedScene" uid="uid://cslj0ye8shdw4" path="res://scenes/crate.tscn" id="5_cfxr1"]
+
+[node name="primeira" type="Node"]
+
+[node name="crate_furo2" parent="." instance=ExtResource("1_w2d6y")]
+position = Vector2(179, 134)
+
+[node name="pig" parent="." instance=ExtResource("2_5od30")]
+position = Vector2(170, 25)
+
+[node name="crate_retangula" parent="." instance=ExtResource("3_unrjo")]
+position = Vector2(200.99998, 191)
+rotation = -1.5613906
+
+[node name="crate_retangula2" parent="." instance=ExtResource("3_unrjo")]
+position = Vector2(127, 193)
+rotation = -1.5613906
+
+[node name="crate_cumprida" parent="." instance=ExtResource("4_avfhh")]
+position = Vector2(164, 164)
+
+[node name="crate_furo" parent="." instance=ExtResource("1_w2d6y")]
+position = Vector2(128, 134)
+
+[node name="crate_retangula3" parent="." instance=ExtResource("3_unrjo")]
+position = Vector2(123.00001, 87)
+rotation = -1.5865043
+
+[node name="crate_retangula4" parent="." instance=ExtResource("3_unrjo")]
+position = Vector2(180, 87)
+rotation = 4.712389
+scale = Vector2(0.99999994, 0.99999994)
+
+[node name="crate_cumprida2" parent="." instance=ExtResource("4_avfhh")]
+position = Vector2(157, 57)
+
+[node name="crate2" parent="." instance=ExtResource("5_cfxr1")]
+position = Vector2(123, 28)

@@ -1,14 +1,10 @@
-[gd_scene load_steps=14 format=4 uid="uid://ip1y3jgdsjcw"]
+[gd_scene load_steps=10 format=4 uid="uid://ip1y3jgdsjcw"]
 
 [ext_resource type="PackedScene" uid="uid://cpdpor03563sm" path="res://scenes/bird.tscn" id="1_u5sy4"]
 [ext_resource type="Texture2D" uid="uid://dq035tr13gxjk" path="res://arte angry/Nature.png" id="3_p57ef"]
 [ext_resource type="Texture2D" uid="uid://xo5oitejwvup" path="res://arte angry/Slingshot.webp" id="4_u5sy4"]
 [ext_resource type="Texture2D" uid="uid://cgy1lusw86j15" path="res://arte angry/Slingshot_cortado.png" id="5_gee14"]
-[ext_resource type="PackedScene" uid="uid://cslj0ye8shdw4" path="res://scenes/crate.tscn" id="5_p57ef"]
-[ext_resource type="PackedScene" uid="uid://dcilc6523kmhn" path="res://scenes/pig.tscn" id="6_u5sy4"]
-[ext_resource type="PackedScene" uid="uid://jln6ea0j5yqx" path="res://scenes/crate_cumprida.tscn" id="7_u5sy4"]
-[ext_resource type="PackedScene" uid="uid://uha585336mgj" path="res://scenes/crate_retangula.tscn" id="8_gee14"]
-[ext_resource type="PackedScene" uid="uid://daxc13vyxryt8" path="res://scenes/crate_furo.tscn" id="9_0tnpc"]
+[ext_resource type="PackedScene" uid="uid://bujxd7rb3irp7" path="res://scenes/segunda.tscn" id="5_iywne"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_feb5d"]
 texture = ExtResource("3_p57ef")
@@ -1454,24 +1450,6 @@ flip_h = true
 [node name="sling_point" type="Marker2D" parent="."]
 position = Vector2(-307, 112)
 
-[node name="pig" parent="." instance=ExtResource("6_u5sy4")]
-position = Vector2(166, 90)
-
 [node name="crates" type="Node" parent="."]
 
-[node name="crate_retangula" parent="crates" instance=ExtResource("8_gee14")]
-position = Vector2(200.99998, 191)
-rotation = -1.5613906
-
-[node name="crate_retangula2" parent="crates" instance=ExtResource("8_gee14")]
-position = Vector2(127, 193)
-rotation = -1.5613906
-
-[node name="crate_cumprida" parent="crates" instance=ExtResource("7_u5sy4")]
-position = Vector2(164, 164)
-
-[node name="crate" parent="crates" instance=ExtResource("5_p57ef")]
-position = Vector2(166, 136)
-
-[node name="crate_furo" parent="crates" instance=ExtResource("9_0tnpc")]
-position = Vector2(120, 132)
+[node name="segunda" parent="." instance=ExtResource("5_iywne")]
