@@ -9,11 +9,18 @@ const RADIUS = 75
 
 @export var sling_point: Marker2D = null
 
+
+		
 func _ready():
 	start_point = sling_point.position
 	position = start_point
 	
-
+func kill():
+	queue_free()
+	var new_bird = load("res://scenes/bird.tscn").instantiate()
+	new_bird.sling_point = sling_point
+	get_parent().add_child(new_bird)
+		
 func _on_mouse_entered() -> void:
 	mouse_on_bird = true
 
@@ -26,11 +33,12 @@ func _process(delta):
 		timer = timer + delta
 	
 		if timer > 2:
-			queue_free()
+			kill()
 			
-			var new_bird = load("res://scenes/bird.tscn").instantiate()
-			new_bird.sling_point = sling_point
-			get_parent().add_child(new_bird)
+			
+			
+	if position.y >400:
+		kill()
 
 func _input(event):
 	if bird_shot == true:

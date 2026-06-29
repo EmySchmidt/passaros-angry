@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://cqqsp8l3mrrj8"]
 
 [ext_resource type="Texture2D" uid="uid://csyld47owye37" path="res://arte angry/menu.jpg" id="1_d5piu"]
-[ext_resource type="Texture2D" uid="uid://d30x0708elv8m" path="res://arte angry/logo.png" id="2_yhtin"]
+[ext_resource type="Texture2D" uid="uid://bg0cnwqosenmc" path="res://arte angry/ChatGPT Image 28 de jun. de 2026, 23_12_56.png" id="2_yhtin"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6n2hd"]
 bg_color = Color(0, 0.24278674, 0.46742493, 1)
@@ -19,13 +19,13 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="Menu" type="Sprite2D" parent="."]
-position = Vector2(574, 339)
+position = Vector2(571, 393)
 scale = Vector2(1.6455783, 1.5451745)
 texture = ExtResource("1_d5piu")
 
-[node name="Logo" type="Sprite2D" parent="Menu"]
-position = Vector2(164.68376, -141.73154)
-scale = Vector2(0.60768914, 0.6471761)
+[node name="logo" type="Sprite2D" parent="Menu"]
+position = Vector2(-68.66887, -151.43921)
+scale = Vector2(0.34273666, 0.3144648)
 texture = ExtResource("2_yhtin")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
