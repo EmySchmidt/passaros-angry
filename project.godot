@@ -15,10 +15,6 @@ run/main_scene="uid://ip1y3jgdsjcw"
 config/features=PackedStringArray("4.5", "Mobile")
 config/icon="res://icon.svg"
 
-[autoload]
-
-Music="*res://scenes/telas_de_controle/music.tscn"
-
 [display]
 
 window/stretch/mode="viewport"

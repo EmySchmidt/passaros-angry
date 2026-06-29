@@ -8,10 +8,11 @@ var start_point:Vector2
 const RADIUS = 75
 
 @export var sling_point: Marker2D = null
-
+@export var sling_shot: Node2D = null
 
 		
 func _ready():
+	sling_shot.target = self
 	start_point = sling_point.position
 	position = start_point
 	
@@ -19,6 +20,7 @@ func kill():
 	queue_free()
 	var new_bird = load("res://scenes/bird.tscn").instantiate()
 	new_bird.sling_point = sling_point
+	new_bird.sling_shot = sling_shot
 	get_parent().add_child(new_bird)
 		
 func _on_mouse_entered() -> void:
@@ -51,6 +53,7 @@ func _input(event):
 		bird_held = false
 		freeze = false
 		
+		sling_shot.target = null
 		bird_shot = true
 		linear_velocity = -(position - start_point) * 13
 	
