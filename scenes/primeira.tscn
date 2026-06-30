@@ -11,9 +11,6 @@
 [node name="crate_furo2" parent="." instance=ExtResource("1_w2d6y")]
 position = Vector2(179, 134)
 
-[node name="pig" parent="." instance=ExtResource("2_5od30")]
-position = Vector2(170, 25)
-
 [node name="crate_retangula" parent="." instance=ExtResource("3_unrjo")]
 position = Vector2(200.99998, 191)
 rotation = -1.5613906
@@ -42,3 +39,8 @@ position = Vector2(157, 57)
 
 [node name="crate2" parent="." instance=ExtResource("5_cfxr1")]
 position = Vector2(123, 28)
+
+[node name="pigs" type="Node" parent="."]
+
+[node name="pig" parent="pigs" groups=["pig"] instance=ExtResource("2_5od30")]
+position = Vector2(170, 25)

@@ -37,14 +37,16 @@ position = Vector2(88, 85)
 [node name="crate_furo4" parent="." instance=ExtResource("3_jhwmq")]
 position = Vector2(88, -11)
 
-[node name="pig" parent="." instance=ExtResource("5_y0v8s")]
-position = Vector2(142, 132)
-
-[node name="pig2" parent="." instance=ExtResource("5_y0v8s")]
-position = Vector2(347, 181)
-
 [node name="crate_cumprida2" parent="." instance=ExtResource("2_1nlv0")]
 position = Vector2(358, 210)
 
 [node name="crate3" parent="." instance=ExtResource("1_o60g8")]
 position = Vector2(392, 182)
+
+[node name="pigs" type="Node" parent="."]
+
+[node name="pig" parent="pigs" instance=ExtResource("5_y0v8s")]
+position = Vector2(142, 132)
+
+[node name="pig2" parent="pigs" instance=ExtResource("5_y0v8s")]
+position = Vector2(347, 181)

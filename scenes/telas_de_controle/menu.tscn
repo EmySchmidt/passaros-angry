@@ -1,5 +1,6 @@
-[gd_scene load_steps=4 format=3 uid="uid://cqqsp8l3mrrj8"]
+[gd_scene load_steps=5 format=3 uid="uid://cqqsp8l3mrrj8"]
 
+[ext_resource type="Script" uid="uid://olfn5mjgoakd" path="res://scenes/menu.gd" id="1_6n2hd"]
 [ext_resource type="Texture2D" uid="uid://csyld47owye37" path="res://arte angry/menu.jpg" id="1_d5piu"]
 [ext_resource type="Texture2D" uid="uid://bg0cnwqosenmc" path="res://arte angry/ChatGPT Image 28 de jun. de 2026, 23_12_56.png" id="2_yhtin"]
 
@@ -17,6 +18,7 @@ offset_right = -8.0
 offset_bottom = -15.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_6n2hd")
 
 [node name="Menu" type="Sprite2D" parent="."]
 position = Vector2(571, 393)
@@ -52,3 +54,7 @@ layout_mode = 2
 theme_override_font_sizes/font_size = 26
 theme_override_styles/normal = SubResource("StyleBoxFlat_6n2hd")
 text = "Sair"
+
+[connection signal="pressed" from="VBoxContainer/play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="VBoxContainer/fases" to="." method="_on_fases_pressed"]
+[connection signal="pressed" from="VBoxContainer/sair" to="." method="_on_sair_pressed"]
