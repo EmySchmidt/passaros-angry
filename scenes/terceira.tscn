@@ -1,3 +1,37 @@
-[gd_scene format=3 uid="uid://s7tlnwgj0gm2"]
+[gd_scene load_steps=5 format=3 uid="uid://s7tlnwgj0gm2"]
+
+[ext_resource type="PackedScene" uid="uid://jln6ea0j5yqx" path="res://scenes/crate_cumprida.tscn" id="1_3yrhj"]
+[ext_resource type="PackedScene" uid="uid://daxc13vyxryt8" path="res://scenes/crate_furo.tscn" id="2_72idm"]
+[ext_resource type="PackedScene" uid="uid://dcilc6523kmhn" path="res://scenes/pig.tscn" id="3_jqrsp"]
+[ext_resource type="PackedScene" uid="uid://cslj0ye8shdw4" path="res://scenes/crate.tscn" id="4_s6po7"]
 
 [node name="Terceira" type="Node"]
+
+[node name="crate_cumprida" parent="." instance=ExtResource("1_3yrhj")]
+position = Vector2(423, 197)
+rotation = 1.5707964
+
+[node name="crate_furo" parent="." instance=ExtResource("2_72idm")]
+position = Vector2(423, 114)
+
+[node name="crate_cumprida2" parent="." instance=ExtResource("1_3yrhj")]
+position = Vector2(509, 194)
+rotation = 1.5707964
+
+[node name="crate_furo2" parent="." instance=ExtResource("2_72idm")]
+position = Vector2(509, 111)
+
+[node name="crate_cumprida5" parent="." instance=ExtResource("1_3yrhj")]
+position = Vector2(325, 192)
+rotation = 1.5707964
+
+[node name="crate" parent="." instance=ExtResource("4_s6po7")]
+position = Vector2(326, 112)
+
+[node name="pigs" type="Node" parent="."]
+
+[node name="pig" parent="pigs" instance=ExtResource("3_jqrsp")]
+position = Vector2(470, 227)
+
+[node name="pig2" parent="pigs" instance=ExtResource("3_jqrsp")]
+position = Vector2(377, 224)

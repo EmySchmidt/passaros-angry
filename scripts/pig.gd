@@ -1,6 +1,7 @@
 extends RigidBody2D
 
-const UNALIVE_IMPACT = 150
+const UNALIVE_IMPACT = 100
+@onready var game: Node = null
 
 func _physics_process(delta):
 	if not get_colliding_bodies().is_empty():
@@ -15,7 +16,7 @@ func _physics_process(delta):
 			var velocity_difference = linear_velocity - body_velocity
 
 			if velocity_difference.length() > UNALIVE_IMPACT:
-				var game = get_tree().current_scene
+				game = get_tree().current_scene
 
 				if game.has_method("pig_dead"):
 					game.pig_dead()

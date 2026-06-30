@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://cqqsp8l3mrrj8"]
 
-[ext_resource type="Script" uid="uid://olfn5mjgoakd" path="res://scenes/menu.gd" id="1_6n2hd"]
+[ext_resource type="Script" uid="uid://olfn5mjgoakd" path="res://scripts/menu.gd" id="1_6n2hd"]
 [ext_resource type="Texture2D" uid="uid://csyld47owye37" path="res://arte angry/menu.jpg" id="1_d5piu"]
 [ext_resource type="Texture2D" uid="uid://bg0cnwqosenmc" path="res://arte angry/ChatGPT Image 28 de jun. de 2026, 23_12_56.png" id="2_yhtin"]
 

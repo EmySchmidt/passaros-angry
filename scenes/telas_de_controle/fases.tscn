@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://dev4i8plhqg2v"]
 
-[ext_resource type="Script" uid="uid://b55dspenm8va8" path="res://scenes/fases.gd" id="1_3cmpl"]
+[ext_resource type="Script" uid="uid://b55dspenm8va8" path="res://scripts/fases.gd" id="1_3cmpl"]
 [ext_resource type="Texture2D" uid="uid://c4h8uh4jxfavm" path="res://arte angry/fundo fases.png" id="1_ajcdm"]
 
 [node name="fases" type="Control"]
