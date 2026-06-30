@@ -42,5 +42,5 @@ position = Vector2(123, 28)
 
 [node name="pigs" type="Node" parent="."]
 
-[node name="pig" parent="pigs" groups=["pig"] instance=ExtResource("2_5od30")]
+[node name="pig" parent="pigs" instance=ExtResource("2_5od30")]
 position = Vector2(170, 25)
