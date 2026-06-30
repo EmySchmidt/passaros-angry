@@ -11,13 +11,27 @@ config_version=5
 [application]
 
 config/name="passaros angry"
-run/main_scene="uid://ip1y3jgdsjcw"
+run/main_scene="uid://cqqsp8l3mrrj8"
 config/features=PackedStringArray("4.5", "Mobile")
 config/icon="res://icon.svg"
 
+<<<<<<< HEAD
+=======
+[autoload]
+
+Music="*res://scenes/telas_de_controle/music.tscn"
+Game="*res://scripts/game.gd"
+Progress="*res://scripts/progress.gd"
+LevelManager="*res://scripts/level_manager.gd"
+
+>>>>>>> 1598e72228aa911c31b85db9d8f2338f638ac37b
 [display]
 
 window/stretch/mode="viewport"
+
+[global_group]
+
+pig=""
 
 [input]
 

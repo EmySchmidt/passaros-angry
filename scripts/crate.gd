@@ -1,6 +1,6 @@
 extends RigidBody2D
 
-const UNALIVE_IMPACT = 300
+const UNALIVE_IMPACT = 200
 const MEIO_QUEBRADO = 100
 @onready var animCrate: AnimatedSprite2D = $AnimatedSprite2D
 

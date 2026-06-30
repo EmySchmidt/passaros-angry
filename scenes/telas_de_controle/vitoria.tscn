@@ -1,0 +1,46 @@
+[gd_scene load_steps=5 format=3 uid="uid://br7y8hrqlfbt"]
+
+[ext_resource type="Script" uid="uid://njpifyd1t38u" path="res://scripts/vitoria.gd" id="1_3llyq"]
+[ext_resource type="Texture2D" uid="uid://c550e15h48qhx" path="res://arte angry/vitoria.jpg" id="1_k1ptr"]
+
+[sub_resource type="SystemFont" id="SystemFont_k1ptr"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3llyq"]
+bg_color = Color(0, 0.24278674, 0.46742493, 1)
+
+[node name="vitoria" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_3llyq")
+
+[node name="Vitoria" type="Sprite2D" parent="."]
+position = Vector2(585, 335.5)
+scale = Vector2(1.6875, 1.7791563)
+texture = ExtResource("1_k1ptr")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 520.0
+offset_top = 251.0
+offset_right = 763.0
+offset_bottom = 347.0
+theme_override_colors/font_color = Color(0.29219002, 0.29219005, 0.29219, 1)
+theme_override_fonts/font = SubResource("SystemFont_k1ptr")
+theme_override_font_sizes/font_size = 70
+text = "Vitória!"
+
+[node name="menu" type="Button" parent="."]
+layout_mode = 0
+offset_left = 488.0
+offset_top = 347.0
+offset_right = 799.0
+offset_bottom = 383.0
+theme_override_font_sizes/font_size = 26
+theme_override_styles/normal = SubResource("StyleBoxFlat_3llyq")
+text = "Voltar ao menu principal"
+
+[connection signal="button_down" from="menu" to="." method="_on_menu_button_down"]

@@ -1,0 +1,52 @@
+[gd_scene load_steps=6 format=3 uid="uid://bujxd7rb3irp7"]
+
+[ext_resource type="PackedScene" uid="uid://cslj0ye8shdw4" path="res://scenes/crate.tscn" id="1_o60g8"]
+[ext_resource type="PackedScene" uid="uid://jln6ea0j5yqx" path="res://scenes/crate_cumprida.tscn" id="2_1nlv0"]
+[ext_resource type="PackedScene" uid="uid://daxc13vyxryt8" path="res://scenes/crate_furo.tscn" id="3_jhwmq"]
+[ext_resource type="PackedScene" uid="uid://uha585336mgj" path="res://scenes/crate_retangula.tscn" id="4_15k62"]
+[ext_resource type="PackedScene" uid="uid://dcilc6523kmhn" path="res://scenes/pig.tscn" id="5_y0v8s"]
+
+[node name="segunda" type="Node"]
+
+[node name="crate" parent="." instance=ExtResource("1_o60g8")]
+position = Vector2(157, 192)
+
+[node name="crate2" parent="." instance=ExtResource("1_o60g8")]
+position = Vector2(86, 192)
+
+[node name="crate_cumprida" parent="." instance=ExtResource("2_1nlv0")]
+position = Vector2(122, 164)
+
+[node name="crate_furo" parent="." instance=ExtResource("3_jhwmq")]
+position = Vector2(88, 133)
+
+[node name="crate_retangula2" parent="." instance=ExtResource("4_15k62")]
+position = Vector2(322, 239)
+rotation = 4.712389
+
+[node name="crate_retangula" parent="." instance=ExtResource("4_15k62")]
+position = Vector2(400, 240)
+rotation = -1.5707964
+
+[node name="crate_furo2" parent="." instance=ExtResource("3_jhwmq")]
+position = Vector2(88, 37)
+
+[node name="crate_furo3" parent="." instance=ExtResource("3_jhwmq")]
+position = Vector2(88, 85)
+
+[node name="crate_furo4" parent="." instance=ExtResource("3_jhwmq")]
+position = Vector2(88, -11)
+
+[node name="crate_cumprida2" parent="." instance=ExtResource("2_1nlv0")]
+position = Vector2(358, 210)
+
+[node name="crate3" parent="." instance=ExtResource("1_o60g8")]
+position = Vector2(392, 182)
+
+[node name="pigs" type="Node" parent="."]
+
+[node name="pig" parent="pigs" instance=ExtResource("5_y0v8s")]
+position = Vector2(142, 132)
+
+[node name="pig2" parent="pigs" instance=ExtResource("5_y0v8s")]
+position = Vector2(347, 181)

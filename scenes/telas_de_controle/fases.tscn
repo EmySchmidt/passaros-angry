@@ -1,0 +1,62 @@
+[gd_scene load_steps=3 format=3 uid="uid://dev4i8plhqg2v"]
+
+[ext_resource type="Script" uid="uid://b55dspenm8va8" path="res://scripts/fases.gd" id="1_3cmpl"]
+[ext_resource type="Texture2D" uid="uid://c4h8uh4jxfavm" path="res://arte angry/fundo fases.png" id="1_ajcdm"]
+
+[node name="fases" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_3cmpl")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = -308.0
+offset_top = -228.0
+offset_right = 1492.0
+offset_bottom = 672.0
+texture = ExtResource("1_ajcdm")
+
+[node name="Button1" type="Button" parent="."]
+layout_mode = 0
+offset_left = 82.0
+offset_top = 106.0
+offset_right = 253.0
+offset_bottom = 189.0
+theme_override_font_sizes/font_size = 43
+text = "1"
+
+[node name="Button2" type="Button" parent="."]
+layout_mode = 0
+offset_left = 306.0
+offset_top = 105.0
+offset_right = 477.0
+offset_bottom = 188.0
+theme_override_font_sizes/font_size = 43
+text = "2"
+
+[node name="Button3" type="Button" parent="."]
+layout_mode = 0
+offset_left = 536.0
+offset_top = 103.0
+offset_right = 707.0
+offset_bottom = 186.0
+theme_override_font_sizes/font_size = 43
+text = "3"
+
+[node name="voltar" type="Button" parent="."]
+layout_mode = 0
+offset_left = 794.0
+offset_top = 566.0
+offset_right = 1110.0
+offset_bottom = 623.0
+theme_override_font_sizes/font_size = 35
+text = "VOLTAR AO MENU"
+
+[connection signal="pressed" from="Button1" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_button_3_pressed"]
+[connection signal="pressed" from="voltar" to="." method="_on_voltar_pressed"]

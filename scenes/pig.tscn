@@ -6,7 +6,7 @@
 [sub_resource type="CircleShape2D" id="CircleShape2D_0tnpc"]
 radius = 21.5
 
-[node name="pig" type="RigidBody2D"]
+[node name="pig" type="RigidBody2D" groups=["pig"]]
 mass = 0.5
 contact_monitor = true
 max_contacts_reported = 3
